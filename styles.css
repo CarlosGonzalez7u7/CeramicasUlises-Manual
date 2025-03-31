@@ -1,0 +1,633 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+/* ================================
+    Navegación Mejorada
+   ================================ */
+.glass-nav {
+    background: rgba(255, 248, 225, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.5s ease-out;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #2d3436;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.nav-link:hover::before {
+    left: 100%;
+}
+
+.nav-icon {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover .nav-icon {
+    transform: scale(1.2) rotate(10deg);
+    animation: bounce 0.5s ease;
+}
+
+.nav-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .glass-nav {
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-container {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .nav-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link {
+        padding: 0.6rem 1rem;
+        flex-shrink: 0;
+    }
+
+    .nav-text {
+        font-size: 1rem;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos del libro */
+.book {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    perspective: 1500px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+}
+
+.book.book-open {
+    transform: translateZ(50px);
+}
+
+/* Estilos de la portada */
+.book-cover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.book-cover:hover {
+    transform: rotateY(-25deg);
+}
+
+.book-spine {
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to right, #8a2be2, #9370db);
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+.book-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #9370db, #8a2be2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
+    backface-visibility: hidden;
+}
+
+.book-cover-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.cover-img {
+    width: 300px;
+    height: 200px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.book-title {
+    text-align: center;
+    color: white;
+}
+
+.book-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.book-title h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.book-instructions {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Estilos de las páginas */
+.book-pages {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: white;
+}
+
+.book-page {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.left-page {
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(to right, #fff 95%, #f0f0f0 100%);
+}
+
+.right-page {
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(to left, #fff 95%, #f0f0f0 100%);
+}
+
+.page-content {
+    height: 85%;
+    overflow-y: auto;
+}
+
+.page-title {
+    color: #8a2be2;
+    border-bottom: 2px solid #9370db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-text {
+    line-height: 1.6;
+    color: #333;
+}
+
+.page-image {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.page-img {
+    max-width: 100%;
+    height: 150px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.page-notes {
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border-left: 3px solid #9370db;
+}
+
+.page-number {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.left-page .page-number {
+    right: 2rem;
+}
+
+.right-page .page-number {
+    left: 2rem;
+}
+
+/* Controles de navegación */
+.book-controls {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.control-btn {
+    background: #9370db;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.control-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.control-btn:hover {
+    background: #8a2be2;
+    transform: translateY(-3px);
+}
+
+.control-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.close-btn {
+    background: #ff6b6b;
+}
+
+.close-btn:hover {
+    background: #ff5252;
+}
+
+/* Estilos responsivos */
+@media (max-width: 900px) {
+    .book {
+        width: 90%;
+        height: 80vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .book-pages {
+        flex-direction: column;
+    }
+
+    .book-page {
+        height: 50%;
+    }
+
+    .left-page {
+        border-right: 1px solid #e0e0e0;
+        border-bottom: none;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .right-page {
+        border-left: 1px solid #e0e0e0;
+        border-top: none;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+/* ================================
+    Pie de Página
+   ================================ */
+/* Pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+footer .footer-content img {
+    transition: transform 0.3s;
+}
+
+footer .footer-content img:hover {
+    transform: scale(1.1);
+}
+
+footer .footer-info p {
+    margin: 0;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ff9800;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+/* Estilos adicionales para el contenido del libro */
+.book-section {
+    margin-bottom: 15px;
+}
+
+.book-list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.book-list li {
+    margin-bottom: 8px;
+}
+
+.book-steps {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.book-steps li {
+    margin-bottom: 8px;
+}
+
+.book-highlight {
+    background-color: #f0e6ff;
+    border-left: 4px solid #9370db;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.book-note {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.book-tip {
+    background-color: #e6f7ff;
+    border-left: 4px solid #1890ff;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.book-important {
+    background-color: #fff3e6;
+    border-left: 4px solid #ff9800;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+}
+
+.book-url {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.1em;
+    color: #9370db;
+}
+
+.book-categories {
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #9370db;
+}
+
+.book-example {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px dashed #ccc;
+}
+
+.book-conclusion {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #9370db;
+}
+
+.highlight {
+    color: #8a2be2;
+}
+
+/* Estilos para el índice */
+.index-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8a2be2;
+}
+
+.index-container {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.index-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+.index-text {
+    color: #333;
+    font-weight: 500;
+}
+
+.index-dots {
+    flex: 1;
+    margin: 0 5px;
+    border-bottom: 1px dotted #aaa;
+    position: relative;
+    top: -4px;
+}
+
+.index-page {
+    color: #8a2be2;
+    font-weight: bold;
+    min-width: 25px;
+    text-align: right;
+}
+
+.index-note {
+    margin-top: 30px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Efecto hover para los elementos del índice */
+.index-item:hover {
+    cursor: pointer;
+    background-color: #f0e6ff;
+    border-radius: 4px;
+    padding-left: 5px;
+    transition: all 0.2s ease;
+}
+
+.index-item:hover .index-text {
+    color: #8a2be2;
+}
