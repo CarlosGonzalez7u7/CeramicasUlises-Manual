@@ -106,16 +106,16 @@ document.addEventListener("DOMContentLoaded", function () {
                   <div class="book-url">
                       https://ceramicasulices.navidev.org/
                   </div>
-                  <center><img src="/img/1.png" width="201" height="132"
+                  <center><img src="img/1.png" width="201" height="132"
                     alt="Logo de Cerámica Uli"></center>
                   <p>Una de las ventajas de nuestro sitio web es que <strong>no necesitas instalar nada</strong>, ¡puedes empezar a explorar de inmediato!</p>
                   <div class="book-note">
                       <strong>Nota:</strong> La aplicación está optimizada para funcionar en cualquier dispositivo, ya sea computadora, tablet o teléfono móvil, si detectas algun error o falla comunicate con el equipo de soporte tecnico al correo electronico: soporteupn@ceramicasulices.navidev.org.
                   </div>
-                  <center><img src="/img/celular.png" height="262" alt="Logo de Cerámica Uli"></center><br>
+                  <center><img src="img/celular.png" height="262" alt="Logo de Cerámica Uli"></center><br>
               </div>
           `,
-      image: "/img/2.png",
+      image: "img/2.png",
       notes:
         "Compatible con todos los navegadores modernos he dispositivos electrónicos",
     },
