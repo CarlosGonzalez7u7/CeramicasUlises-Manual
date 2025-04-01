@@ -183,7 +183,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   <div class="book-categories">
                       <span>Tazas</span> • <span>Platos</span> • <span>Resina</span> • <span>Alcancias</span> • <span>Otros Productos</span>
                   </div>
-                  <center><img src="img/12.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                  <center><img src="img/12.png" width="241" height="132" alt="Imagen de los Botones"></center><br>
+
                   <p>Cada producto se muestra con su nombre ,una imagen del producto, precio por pieza y por docena.<br> <strong>Ejemplo: (1 x 20) y (12 x 200).</strong></p>
                   <br>
                   <center>
