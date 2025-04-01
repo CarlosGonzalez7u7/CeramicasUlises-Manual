@@ -126,22 +126,22 @@ document.addEventListener("DOMContentLoaded", function () {
                   <p>Al ingresar a la aplicación, encontrarás una interfaz amigable con una barra de navegación principal que te permite acceder a las diferentes secciones:</p><br>
                   <ul class="book-list">
                       <li><strong>🏠Inicio:</strong> Te lleva de vuelta a la página principal, donde generalmente se muestran productos destacados, novedades o categorías principales como (Tazas,Platos,Alcancias,etc).</li>
-                      <center><img src="/img/3.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/3.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                       <li><strong>📞Quejas:</strong> Una sección dedicada para que puedas enviar tus comentarios, sugerencias o reportar algún inconveniente, o si nos quieres dar algun comentario positivo tambien es muy apreciado.</li>
-                      <center><img src="/img/4.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/4.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                       <li><strong>📍Nosotros:</strong> Aquí encontrarás más información sobre Cerámicas Ulises, nuestra ubicacion, todos los comentarios y calificaciones de nuestros usuarios</li>
-                      <center><img src="/img/5.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/5.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                       <li><strong>👤Tú Perfil:</strong> Accede a la información de tu cuenta, donde si es tu primera vez en nuestro Sitio Web, 
                       es importante rellenar los datos faltantes que se te solicitaran en esta sección, con tal de poder saber si en un futuro
                       necesitas un envio a domicilio poder llegar a tu domicilio, solo se necesita rellenar una vez y se quedara guardado,
                       igual puedes editar informacion si te equivocaste o cambiaste de dirección o algun otro dato <strong>⚠️Importante</strong></li>
-                      <center><img src="/img/6.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/6.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                       <li><strong>🛒Carrito:</strong> Muestra los productos que has seleccionado para comprar, y tambien puedes consultar los pedidos o productos que has hecho en nuestro sitio web.</li>
-                      <center><img src="/img/7.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/7.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
                   </ul>
               </div>
           `,
