@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   <div class="book-categories">
                       <span>Tazas</span> • <span>Platos</span> • <span>Resina</span> • <span>Alcancias</span> • <span>Otros Productos</span>
                   </div>
-                  <center><img src="/img/12.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                  <center><img src="img/12.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
                   <p>Cada producto se muestra con su nombre ,una imagen del producto, precio por pieza y por docena.<br> <strong>Ejemplo: (1 x 20) y (12 x 200).</strong></p>
                   <br>
                   <center>
@@ -212,17 +212,17 @@ document.addEventListener("DOMContentLoaded", function () {
                   <p>Cuando estés en la página de los productos y ya estes convencid@ por uno y deseas comprar:</p>
                   <ol class="book-steps">
                       <li>Busca el botón llamado "Añadir al carrito" o "Pedir" o similar.</li>
-                      <img src="/img/14.png" width="161" height="92"
+                      <img src="img/14.png" width="161" height="92"
                     alt="Logo de Cerámica Uli">
                     
                       <li>Esto lo enviara a otra pagina llamada Carrito ,donde se agregara su producto.</li>
-                      <center><img src="/img/15.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/15.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
                       
                       <li>Aqui le aparecera un boton donde desplegara una lista de la cantidad que desee.</li>
-                      <center><img src="/img/16.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/16.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                       <li>Selecciona la cantidad deseada y después se mostrara el total del pedido que va a pagar en tiempo real.🟢🔴</li>
-                      <center><img src="/img/17.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/17.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                       <li>Nota (¡Importante!):<br>
                       Si usted selecciona más de 12 piezas se le aplicara un descuento.🔵</li>
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       <video width="241" height="132" controls> <source src="img/18.mp4" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video.
                       </video></center><br>
-                      <center><img src="/img/18.png" width="341" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/18.png" width="341" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                       <li>>Puedes seguir navegando y añadiendo más productos a tu carrito antes de finalizar la compra.</li>
                       <li>>Para esto ,tienes un boton el cual dice "Segir Comprando" el cual lo enviara a la pagina principal 
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       <video width="241" height="132" controls> <source src="img/18.mp4" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video.
                       </video></center><br>
-                      <center><img src="/img/19.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/19.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                       <li>El carrito se actualizará indicando el total de artículos, por producto y el total a pagar.</li>
                   </ol>
@@ -259,14 +259,14 @@ document.addEventListener("DOMContentLoaded", function () {
               <div class="book-section">
                   <p>Una vez ya estes convencid@, de tus productos y deseas ya realizar el pedido:<br>
                   Haz clic en el icono o enlace "Carrito" en la barra de navegación para ver todos los productos que has seleccionado.</p>
-                  <center><img src="/img/7.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                  <center><img src="img/7.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
 
                   <p>Dentro del carrito, podrás:</p>
                   <ul class="book-list">
                       <li><strong>Ver el listado de productos:</strong> La cantidad de cada uno y el precio unitario.</li>
                       <li><strong>Ajustar la cantidad:</strong> Modifica el número de piezas de cada artículo.</li>
                       <li><strong>Eliminar productos:</strong> Quitar artículos que ya no desees.</li>
-                      <center><img src="/img/21.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
+                      <center><img src="img/21.png" width="241" height="132" alt="Logo de Cerámica Uli"></center><br>
                       <li>Ver el subtotal y el total estimado de tu compra.</li>
                   </ul><br>
 
@@ -325,17 +325,17 @@ document.addEventListener("DOMContentLoaded", function () {
                   verificado las cantidades y precios (incluyendo los descuentos por mayoreo aplicados):</p>
                   <ol class="book-steps">
                       <li>Busca y haz clic en el botón "Hacer Pedido📦".</li>
-                      <center><img src="/img/carrito.png" width="161" height="92"</center><br>
+                      <center><img src="img/carrito.png" width="161" height="92"</center><br>
 
                       <li>Si deseas o quieres que el envio sea a tu domicilio, revisa o actualiza la informacion de tu perfil y ingresa o confirma tu dirección de envío, en esta seccion</li>
-                      <center><img src="/img/22.png" width="161" height="92"</center><br>
+                      <center><img src="img/22.png" width="161" height="92"</center><br>
 
                       <li>> Despues revisas tu Perfil, que tengas tu información correcta o que tengas datos aqui ,de lo contario has lo siguiente:</li>
                       <li> * Ve al boton de "Editar Perfil✏️"</li>
-                      <center><img src="/img/23.png" width="161" height="92"</center><br>
+                      <center><img src="img/23.png" width="161" height="92"</center><br>
 
                       <li> * Luego revisa que información vas a cambiar, Ve al boton de "Editar Perfil✅"</li>
-                      <center><img src="/img/24.png" width="161" height="162"</center><br>
+                      <center><img src="img/24.png" width="161" height="162"</center><br>
 
                       <li>Revisa bien tu informacion y despues de eso, presionas el boton "Actualizar Perfil✅".</li>
                       <li>Ya finalizado eso ya solo quedaria ahora si presionar el botón de "Hacer Pedido📦" y listo.</li>
@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   <div class="book-highlight">
                       <p>Puedes revisar los pedidos que has realizado en el boton de "Mis pedidos" ,donde se deplegara una tablita con todos tus pedidos realizados hasta hoy.</p>
                   </div>
-                  <center><img src="/img/25.png" width="438" height="185" alt="Logo de Cerámica Uli"></center><br>
+                  <center><img src="img/25.png" width="438" height="185" alt="Logo de Cerámica Uli"></center><br>
               </div>
           `,
       image: "https://via.placeholder.com/200x150/e6ccb3/333333?text=Checkout",
