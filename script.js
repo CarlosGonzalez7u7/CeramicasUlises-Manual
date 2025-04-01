@@ -321,9 +321,10 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Finalizar la Compra (Ultimo Paso)✅",
       content: `
               <div class="book-section">
-                  <p>Una vez ya aclarado y que estés satisfecho/a con los productos en tu carrito y hayas verificado las cantidades y precios (incluyendo los descuentos por mayoreo aplicados):</p>
+                  <p>Una vez ya aclarado y que estés satisfech@ con los productos en tu carrito y hayas 
+                  verificado las cantidades y precios (incluyendo los descuentos por mayoreo aplicados):</p>
                   <ol class="book-steps">
-                      <li>Busca y haz clic en el botón "Finalizar Compra" o "Proceder al Pago".</li>
+                      <li>Busca y haz clic en el botón "Hacer Pedido📦".</li>
                       <center><img src="/img/carrito.png" width="161" height="92"</center><br>
 
                       <li>Si deseas o quieres que el envio sea a tu domicilio, revisa o actualiza la informacion de tu perfil y ingresa o confirma tu dirección de envío, en esta seccion</li>
@@ -334,18 +335,20 @@ document.addEventListener("DOMContentLoaded", function () {
                       <center><img src="/img/23.png" width="161" height="92"</center><br>
 
                       <li> * Luego revisa que información vas a cambiar, Ve al boton de "Editar Perfil✅"</li>
-                      <center><img src="/img/24.png" width="161" height="92"</center><br>
+                      <center><img src="/img/24.png" width="161" height="162"</center><br>
 
-                      <li>Revisa bien el resumen de tu pedido.</li>
-                      <li>Confirma tu compra haciendo clic en "Confirmar Pedido".</li>
+                      <li>Revisa bien tu informacion y despues de eso, presionas el boton "Actualizar Perfil✅".</li>
+                      <li>Ya finalizado eso ya solo quedaria ahora si presionar el botón de "Hacer Pedido📦" y listo.</li>
                   </ol>
                   <div class="book-highlight">
-                      <p>Recibirás un correo electrónico con la confirmación de tu pedido y los detalles de seguimiento.</p>
+                      <p>Puedes revisar los pedidos que has realizado en el boton de "Mis pedidos" ,donde se deplegara una tablita con todos tus pedidos realizados hasta hoy.</p>
                   </div>
+                  <center><img src="/img/25.png" width="438" height="185" alt="Logo de Cerámica Uli"></center><br>
               </div>
           `,
       image: "https://via.placeholder.com/200x150/e6ccb3/333333?text=Checkout",
-      notes: "Todos los pagos se procesan a través de plataformas seguras",
+      notes:
+        "Todos los pedidos se procesan a través de WhatsApp con el contacto del encargado del Negocio, por el momento aun no se pueden hacer compras dentro de la Aplicacion Web ",
     },
     {
       title: "Secciones Adicionales",
