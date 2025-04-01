@@ -20,74 +20,81 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Índice",
       content: `
           <div class="book-section">
-              <h3 class="index-title">Contenido</h3>
+              <h3 class="index-title">Contenido Rapido</h3>
               
               <div class="index-container">
                   <div class="index-item">
-                      <span class="index-text">Introducción</span>
+                      <span class="index-text"><strong>1. Introducción</strong></span>
                       <span class="index-dots"></span>
                       <span class="index-page">1</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Acceso a la Aplicación</span>
+                      <span class="index-text"><strong>2. Acceso a la Aplicación</strong></span>
                       <span class="index-dots"></span>
                       <span class="index-page">2</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Pantalla Principal y Navegación</span>
+                      <span class="index-text"><strong>3. Pantalla Principal y Navegación</strong></span>
                       <span class="index-dots"></span>
                       <span class="index-page">3</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Navegación (continuación)</span>
+                      <span class="index-text"> 3.1 Navegación (continuación)</span>
                       <span class="index-dots"></span>
                       <span class="index-page">4</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Explorar y Seleccionar Productos</span>
+                      <span class="index-text">3.2 Explorar y Seleccionar Productos</span>
                       <span class="index-dots"></span>
                       <span class="index-page">5</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Añadir Productos al Carrito</span>
+                      <span class="index-text">3.3 Añadir Productos al Carrito</span>
                       <span class="index-dots"></span>
                       <span class="index-page">6</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Gestionar tu Carrito de Compras</span>
+                      <span class="index-text">3.4 Gestionar tu Carrito de Compras</span>
                       <span class="index-dots"></span>
                       <span class="index-page">7</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Descuento por Mayoreo</span>
+                      <span class="index-text">3.4.1 Descuento por Mayoreo</span>
                       <span class="index-dots"></span>
                       <span class="index-page">8</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Aclaración sobre Descuentos</span>
+                      <span class="index-text">3.4.2 Aclaración sobre Descuentos</span>
                       <span class="index-dots"></span>
                       <span class="index-page">9</span>
                   </div>
                   
                   <div class="index-item">
-                      <span class="index-text">Finalizar la Compra (Checkout)</span>
+                      <span class="index-text">3.4.3 Finalizar la Compra (Checkout)</span>
                       <span class="index-dots"></span>
                       <span class="index-page">10</span>
                   </div>
-                  
+
                   <div class="index-item">
-                      <span class="index-text">Secciones Adicionales</span>
+                      <span class="index-text"><strong>💡 Retoalimentación </strong></span>
                       <span class="index-dots"></span>
                       <span class="index-page">11</span>
                   </div>
+
+                  <div class="index-item">
+                      <span class="index-text"><strong>👨‍💻 Desarrollador </strong></span>
+                      <span class="index-dots"></span>
+                      <span class="index-page">12</span>
+                  </div>
+
               </div>
               
               <div class="index-note">
@@ -347,19 +354,22 @@ document.addEventListener("DOMContentLoaded", function () {
                   <center><img src="img/25.png" width="438" height="185" alt="Logo de Cerámica Uli"></center><br>
               </div>
           `,
-      image: "https://via.placeholder.com/200x150/e6ccb3/333333?text=Checkout",
+      image: "img/26.png",
       notes:
         "Todos los pedidos se procesan a través de WhatsApp con el contacto del encargado del Negocio, por el momento aun no se pueden hacer compras dentro de la Aplicacion Web ",
     },
     {
-      title: "Secciones Adicionales",
+      title: "Recordatorios Adicionales",
       content: `
               <div class="book-section">
                   <ul class="book-list">
-                      <li><strong>Quejas:</strong> Utiliza el formulario o la información de contacto proporcionada en esta sección para comunicarte con nosotros si tienes algún problema o sugerencia.</li>
-                      <li><strong>Nosotros:</strong> Conoce más sobre la esencia de Cerámicas Ulises.</li>
-                      <li><strong>Tú Perfil:</strong> Mantén tus datos actualizados para futuras compras.</li>
-                      <li><strong>Asistente/Tutorial:</strong> No dudes en usar estas herramientas si necesites ayuda adicional mientras navegas.</li>
+                      <li><strong>🏠Inicio:</strong> Explora nuestra divercidad de producto de la mas pura calidad, 100% Artesanal y tradicional,utilizando nuestros filtros de busqueda o botones de las diversas categorias. </li><br>
+                      <li><strong>📞Quejas:</strong> Utiliza el formulario para dejar una opinión o la información de contacto proporcionada en esta sección para comunicarte con nosotros si tienes algún problema o sugerencia.</li><br>
+                      <li><strong>📍Nosotros:</strong> Conoce más sobre la esencia de Cerámicas Ulises.</li><br>
+                      <li><strong>🛒Carrito:</strong> Mantén tus datos actualizados para futuras compras.</li><br>
+                      <li><strong>👤Tú Perfil:</strong> Mantén tus datos actualizados para futuras compras.</li><br>
+                      <li><strong>🤖Asistente/Tutorial:</strong> No dudes en usar estas herramientas si necesites ayuda adicional mientras navegas.</li><br>
+                      <li><strong>👤Login/Registro:</strong> No se encuentra en la barra de navegación, pero es importante ya que si usted no se registra o inicia sesión en nuestro Sitio Web no lo disfrutara al 100% de su potencial ,aparte de que algunas funciones estan limitadas para usuarios invitados</li><br>
                   </ul>
                   <div class="book-conclusion">
                       <p>¡Gracias por elegir Cerámicas Ulises!</p>
@@ -368,6 +378,35 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
           `,
       image: "https://via.placeholder.com/200x150/e6ccb3/333333?text=Gracias",
+      notes: "Estamos para servirte y hacer de tu experiencia algo único",
+    },
+    {
+      title: "👨‍💻 Desarrollador",
+      content: `
+              <div class="book-section">
+              <p>Holaa!!, espero no interrumpir tu navegación y quitarle la seriedad a lo que se enfoca este Sitio Web</p><br>
+                  <p>Mi nombre es Juan Carlos Gonzalez O., soy estudiante del Instituto Tecnologico Superior de Uruapan, estudiante de la carrera de <strong>Ing. en Sistemas Computacionales💻</strong></p><br>
+                  <p>Este proyecto que fue realizado como parte de mi historial academico y profesional 
+                  de la materia de <strong>Desarrollo Web</strong>, creado con el objetivo de ayudar a un negocio,<br> 
+                  y nada más mejor que a nuestros amigos artesanos, en especial este proyecto fue donado a Ceramicas Ulises</p><br>
+                  <p>Por lo que fue creado por mi tanto en FrontEnd(Diseño) y BackEnd(Programacion he Conexiones a DataBase)<br></p>
+                  <p>Si deseas un Sitio Web o Aplicación, pero deseas conocer mas sobre mi trabajo puedes visitar mi Sitio Web:</p><br>
+                  <!-- Enlace directo como hipervínculo -->
+                  <p>
+                      Visita mi sitio web:<br>
+                      <a href="https://juancarloscamposportafolio.navidev.org/" target="_blank">https://juancarloscamposportafolio.navidev.org/</a>
+                  </p><br>
+                  <P>Si deseas contactarme para alguna duda o sugerencia, en mi sitio Web tengo todos los detalles he enlaces directos a mi contacto</p><br>
+
+                  <div class="book-highlight">
+                      <p>¡Gracias por este pequeño espacio de lectura que me regalas</p>
+                      <p>Espero que disfrutes de la experiencia de compra, te sea amigable la navegación,
+                      cualquier comentario,sugerencia o critica ,estoy para leer y escuchar.<br>
+                      Como todo ser humano estamos para aceptar y aprender de nuestras virtudes o equivocaciones. :)</p>
+                  </div>
+              </div>
+          `,
+      image: "img/final.png",
       notes: "Estamos para servirte y hacer de tu experiencia algo único",
     },
   ];
